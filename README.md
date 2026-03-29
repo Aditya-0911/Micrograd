@@ -26,6 +26,22 @@ builds the computation graph automatically:
 The full MLP graph is significantly larger — each arrow represents 
 a Value node that tracks its own gradient during backpropagation.
 
+## Training loss
+Loss decreasing over 10 iterations confirming gradient descent is working:
+
+| Iteration | Loss |
+|-----------|------|
+| 0 | 4.1426 |
+| 1 | 4.0570 |
+| 2 | 3.9571 |
+| 3 | 3.8400 |
+| 4 | 3.7025 |
+| 5 | 3.5408 |
+| 6 | 3.3513 |
+| 7 | 3.1315 |
+| 8 | 2.8809 |
+| 9 | 2.6040 |
+
 ## Verified against PyTorch
 Running `python test.py` confirms all gradients match PyTorch to 1e-6 precision.
 
