@@ -15,6 +15,15 @@ graph with a small neural network library on top.
 - Automatic handling of variables used multiple times in the graph
 - A working MLP trained with gradient descent
 
+## Computational Graph
+Visualization of a sample forward pass showing how the Value class 
+builds the computation graph automatically:
+
+![Computational Graph](output.svg)
+
+The full MLP graph is significantly larger — each arrow represents 
+a Value node that tracks its own gradient during backpropagation.
+
 ## Verified against PyTorch
 Running `python test.py` confirms all gradients match PyTorch to 1e-6 precision.
 
