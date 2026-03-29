@@ -1,4 +1,4 @@
-![header](header.png)
+![header](header.jpg)
 
 # Micrograd
 
