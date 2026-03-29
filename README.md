@@ -1,3 +1,5 @@
+![header](header.png)
+
 # Micrograd
 
 A scalar-valued autograd engine built from scratch in Python, following 
